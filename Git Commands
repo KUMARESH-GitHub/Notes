@@ -1,0 +1,135 @@
+Here is a comprehensive list of common Git commands along with their uses:
+
+Basic Commands
+git init
+
+Usage: Initializes a new Git repository.
+Example: git init
+git clone <repository>
+
+Usage: Creates a copy of an existing repository.
+Example: git clone https://github.com/user/repo.git
+git add <file>
+
+Usage: Adds file changes to the staging area.
+Example: git add filename.txt
+git commit -m "<message>"
+
+Usage: Records changes to the repository with a message.
+Example: git commit -m "Initial commit"
+git status
+
+Usage: Displays the state of the working directory and staging area.
+Example: git status
+git log
+
+Usage: Shows the commit history.
+Example: git log
+git diff
+
+Usage: Shows changes between commits, commit and working tree, etc.
+Example: git diff
+Branching and Merging
+git branch
+
+Usage: Lists all branches in the repository.
+Example: git branch
+git branch <branch-name>
+
+Usage: Creates a new branch.
+Example: git branch feature-branch
+git checkout <branch-name>
+
+Usage: Switches to the specified branch.
+Example: git checkout feature-branch
+git checkout -b <branch-name>
+
+Usage: Creates a new branch and switches to it.
+Example: git checkout -b feature-branch
+git merge <branch-name>
+
+Usage: Merges the specified branch into the current branch.
+Example: git merge feature-branch
+git rebase <branch-name>
+
+Usage: Reapplies commits on top of another base tip.
+Example: git rebase main
+Remote Repositories
+git remote add <name> <url>
+
+Usage: Adds a new remote repository.
+Example: git remote add origin https://github.com/user/repo.git
+git fetch <remote>
+
+Usage: Downloads objects and refs from another repository.
+Example: git fetch origin
+git pull <remote> <branch>
+
+Usage: Fetches and merges changes from the remote repository to the current branch.
+Example: git pull origin main
+git push <remote> <branch>
+
+Usage: Pushes local branch commits to the remote repository.
+Example: git push origin main
+Stashing and Cleaning
+git stash
+
+Usage: Stashes changes in a dirty working directory.
+Example: git stash
+git stash pop
+
+Usage: Applies the most recent stash and removes it from the stash list.
+Example: git stash pop
+git clean -f
+
+Usage: Removes untracked files from the working directory.
+Example: git clean -f
+Tagging
+git tag <tagname>
+
+Usage: Creates a new tag.
+Example: git tag v1.0
+git tag -a <tagname> -m "<message>"
+
+Usage: Creates a new annotated tag.
+Example: git tag -a v1.0 -m "Release version 1.0"
+git push <remote> <tagname>
+
+Usage: Pushes a tag to the remote repository.
+Example: git push origin v1.0
+Viewing and Comparing
+git show <object>
+
+Usage: Shows various types of objects.
+Example: git show HEAD
+git log --oneline
+
+Usage: Displays the commit history in a compact format.
+Example: git log --oneline
+git diff <commit1> <commit2>
+
+Usage: Shows differences between two commits.
+Example: git diff HEAD~1 HEAD
+Undoing Changes
+git reset <commit>
+
+Usage: Resets current HEAD to the specified state.
+Example: git reset HEAD~1
+git reset --hard <commit>
+
+Usage: Resets the index and working directory to the specified state.
+Example: git reset --hard HEAD~1
+git revert <commit>
+
+Usage: Creates a new commit that undoes the changes of the specified commit.
+Example: git revert HEAD
+Configuration
+git config --global user.name "<name>"
+
+Usage: Sets the name that will be attached to your commits.
+Example: git config --global user.name "John Doe"
+git config --global user.email "<email>"
+
+Usage: Sets the email that will be attached to your commits.
+Example: git config --global user.email "johndoe@example.com"
+This list covers many of the essential Git commands you will use frequently. Understanding these commands and their purposes will help you manage your Git repositories effectively.
